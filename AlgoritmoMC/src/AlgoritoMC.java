@@ -1,9 +1,8 @@
-import static javax.swing.JOptionPane.*;
 
 public class AlgoritoMC{
     private String x;
-    private int a;
-    private int y;
+    private long a;
+    private long y;
     public int n;
     private int d;
     public float[] r;
@@ -11,7 +10,7 @@ public class AlgoritoMC{
     public final double alpha = 0.05;
     public final double z = 1.96;
     
-    AlgoritoMC(int cN, String sem, int c){
+    AlgoritoMC(int cN, String sem, long c){
         n= cN;
         r= new float[n];
         x = sem;        
@@ -84,7 +83,7 @@ public class AlgoritoMC{
                 arriba++;
             }
         }
-        String cad = "\nAbajo = "+abajo+"\nArriba = "+arriba;
+        String cad = "\nNumeros por Abajo de la Media= "+abajo+"\nNumeros por Arriba de la media= "+arriba;
         return cad;
     }
     public String hipotesis(){
